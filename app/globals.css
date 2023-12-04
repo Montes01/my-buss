@@ -1,27 +1,34 @@
+/* Add this CSS code to your existing code */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-color-dark: #000000;
+  --text-color-dark: #ffffff;
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+body.dark-mode {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body.light-mode {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
 }
+
+/* Basic styles for dark mode */
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Basic styles for light mode */
+body.light-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
