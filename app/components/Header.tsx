@@ -1,35 +1,22 @@
-import NavButton from "./NavButton";
-import {
-  IconHome2,
-  IconInfoHexagon,
-  IconLogin,
-  IconNotebook,
-} from "@tabler/icons-react";
 import ThemeButton from "./ThemeButton";
-import { ProjectName } from "../lib/Constants";
+import Image from "next/image";
+import SideBar from "./SideBar";
+import HeaderNav from "./HeaderNav";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center py-4 w-screen px-12">
-      <h1 className="text-2xl font-bold flex-grow basis-0">{ProjectName}</h1>
-      <nav className="">
-        <ul className="flex justify-center flex-row w-full gap-2">
-          <NavButton label="Inicio" href="/Home/Start">
-            <IconHome2 />
-          </NavButton>
-          <NavButton label="Login" href="/Home/Login">
-            <IconLogin />
-          </NavButton>
-          <NavButton label="Registro" href="#">
-            <IconNotebook />
-          </NavButton>
-          <NavButton label="About" href="#">
-            <IconInfoHexagon />
-          </NavButton>
-        </ul>
+    <header className="flex justify-between items-center py-5 w-full px-12 sticky top-0 left-0 z-20 bg-inherit ">
+      <a className="h-12 w-12 flex-grow basis-0 " href="/Home/Start">
+        <Image src="/Images/logo.png" width={500} height={500} alt="logo" className="h-full w-auto hover:scale-110 transition-transform   " />
+      </a>
+      <nav className="hidden md:block">
+        <HeaderNav />
       </nav>
-      <section className="flex-grow basis-0 flex justify-end">
+      <section className="md:flex-grow md:basis-0 flex justify-end">
         <ThemeButton />
+      </section>
+      <section className="md:hidden flex-grow basis-0 flex justify-end">
+        <SideBar />
       </section>
     </header>
   );

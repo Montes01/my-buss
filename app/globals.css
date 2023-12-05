@@ -4,20 +4,24 @@
 @tailwind utilities;
 :root {
   --background-color-dark: #191a19;
-  --text-color-dark: #ffffff;
-  --background-color-light: #ffffff;
+  --text-color-dark: #F2F2F2;
+  --background-color-light: #F2F2F2;
   --text-color-light: #000000;
   --contrast-color: #ff0000;
+  --maximum-dark: #222;
+  --maximum-light: #fff;
 }
 
 body.dark-mode {
   --background-color: var(--background-color-dark);
   --text-color: var(--text-color-dark);
+  --maximum: var(--maximum-dark);
 }
 
 body.light-mode {
   --background-color: var(--background-color-light);
   --text-color: var(--text-color-light);
+  --maximum: var(--maximum-light);
 }
 
 /* Basic styles for dark mode */
@@ -30,4 +34,14 @@ body.dark-mode {
 body.light-mode {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--background-color);
+  border: 1px solid #5551;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #5555;
 }

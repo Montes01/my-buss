@@ -18,12 +18,12 @@ export default function login() {
     console.log(id, password);
   };
   return (
-    <div className="relative rounded-xl w-full h-full backdrop-brightness-90 p-12 flex flex-col gap-12 justify-center items-center">
-      <h3 className="font-extrabold text-xl uppercase">Hola de vuelta</h3>
+    <div className="relative rounded-xl w-[30rem] h-auto py-20 backdrop-brightness-90 px-12 text-white flex flex-col gap-12 backdrop-blur-3xl justify-center items-center">
+      <h3 className="font-extrabold text-3xl uppercase">Bienvenido de nuevo</h3>
       <form
         onSubmit={handleSubmit}
         action=""
-        className="flex flex-col gap-12 w-5/6"
+        className="flex flex-col gap-12 w-5/6 max-w-[400px]"
       >
         <div className="flex flex-col gap-2">
           <label htmlFor="documentId"> documento </label>
