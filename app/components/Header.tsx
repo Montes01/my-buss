@@ -5,7 +5,8 @@ import HeaderNav from "./HeaderNav";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center py-5 w-full px-12 sticky top-0 left-0 z-20 bg-inherit ">
+    <header
+    className={`flex justify-between items-center py-5 w-full px-12 md:sticky top-0 left-0 z-20 bg-inherit`}>
       <a className="h-12 w-12 flex-grow basis-0 " href="/Home/Start">
         <Image src="/Images/logo.png" width={500} height={500} alt="logo" className="h-full w-auto hover:scale-110 transition-transform   " />
       </a>

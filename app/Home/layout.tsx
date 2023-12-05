@@ -12,7 +12,7 @@ const layout = ({ children }: Props) => {
         <section className="w-full rounded-xl absolute h-full ">
           <Slider />
         </section>
-        <main className="h-full p-2 w-full grid place-content-center">{children}</main>
+        <main className=" p-2 w-full grid place-content-center">{children}</main>
       </section>
       <Services />
     </div>

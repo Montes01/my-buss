@@ -10,3 +10,8 @@
     transform: translateX(-100%);
   }
 }
+
+.noScroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

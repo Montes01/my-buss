@@ -5,8 +5,8 @@ const Services = () => {
   return (
     <div id="Servicios" className="py-20">
       <div className="w-full flex flex-col items-center gap-7 justify-center py-20">
-        <h2 className="text-4xl font-bold">Descubre nuestros servicios</h2>
-        <p className="text-xl">
+        <h2 className="text-4xl font-bold text-center">Descubre nuestros servicios</h2>
+        <p className="text-xl px-5">
           Explora las diversas opciones que ofrecemos para hacer tu viaje más
           fácil y cómodo:
         </p>
