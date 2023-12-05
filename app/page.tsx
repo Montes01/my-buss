@@ -1,8 +1,7 @@
-
+"use client";
 export default function Home() {
-  return (
-    <main className="">
-      Hello World
-    </main>
-  )
+  if (location) {
+    location.href = "/Home/Start";
+  }
+  return <></>;
 }

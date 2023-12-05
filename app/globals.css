@@ -3,12 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --background-color-dark: #000000;
+  --background-color-dark: #191a19;
   --text-color-dark: #ffffff;
   --background-color-light: #ffffff;
   --text-color-light: #000000;
+  --contrast-color: #ff0000;
 }
-
 
 body.dark-mode {
   --background-color: var(--background-color-dark);
@@ -31,4 +31,3 @@ body.light-mode {
   background-color: var(--background-color);
   color: var(--text-color);
 }
-
