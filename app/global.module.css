@@ -1,5 +1,5 @@
 .slides {
-    animation: slideLeft alternate 15s linear infinite;
+    animation: slideLeft alternate 15s linear infinite both;
 }
 
 @keyframes slideLeft {
@@ -14,4 +14,8 @@
 .noScroll::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.pretty {
+  text-align: pretty;
 }

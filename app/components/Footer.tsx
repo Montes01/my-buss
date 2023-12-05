@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="flex flex-col py-12 w-full items-center justify-center gap-12 bg-maximum text-inherit">
-      <p>
+      <p className="text-center px-2">
         <strong> &copy; 2023</strong> Tu Empresa. Todos los derechos reservados.
       </p>
       <div className="footer-content">
