@@ -1,5 +1,4 @@
 import NavIcon from "../Components/NavIcon";
-import x from "@/app/global.module.css";
 import { PrincipalMessage, ProjectName } from "../lib/Constants";
 import {
   IconPhone,
@@ -13,7 +12,7 @@ export default function page() {
       <div className="text-white relative rounded-xl backdrop-brightness-90 px-12 flex flex-col gap-12 backdrop-blur-2xl py-20 justify-center items-center">
         <h3 className="font-bold text-4xl uppercase">{ProjectName}</h3>
         <p
-          className={`text-lg tracking-normal leading-relaxed max-w-[60ch] text-center ${x.pretty}`}
+          className={`text-lg tracking-normal leading-relaxed max-w-[60ch] text-center`}
         >
           {PrincipalMessage}
         </p>

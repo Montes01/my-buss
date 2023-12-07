@@ -5,11 +5,10 @@ import {
   IconNotebook,
   IconInfoHexagon,
 } from "@tabler/icons-react";
-import x from "../global.module.css";
 export default function HeaderNav() {
   return (
     <ul
-      className={`flex justify-center w-full gap-2 flex-col md:flex-row  ${x.noScroll}`}
+      className={`flex justify-center w-full gap-2 flex-col md:flex-row noScroll`}
     >
       <NavButton label="Inicio" href="/Home">
         <IconHome2 />
