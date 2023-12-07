@@ -18,8 +18,9 @@ export default function login() {
     console.log(id, password);
   };
   return (
-    <div className="relative rounded-xl w-[30rem] h-auto py-20 backdrop-brightness-90 px-12 text-white flex flex-col gap-12 backdrop-blur-3xl justify-center items-center">
-      <h3 className="font-extrabold text-3xl uppercase">Bienvenido de nuevo</h3>
+    <div className="relative rounded-xl w-[30rem]  h-auto py-20 backdrop-brightness-90 px-12
+     text-white flex flex-col gap-12 backdrop-blur-3xl justify-center items-center">
+      <h3 className="font-extrabold sm:text-3xl uppercase text-lg">Bienvenido de nuevo</h3>
       <form
         onSubmit={handleSubmit}
         action=""
