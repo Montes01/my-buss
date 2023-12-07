@@ -1,12 +1,11 @@
 import NavIcon from "@/app/Components/NavIcon";
-import Services from "@/app/Components/Services";
+import x from "@/app/global.module.css";
 import { PrincipalMessage, ProjectName } from "@/app/lib/Constants";
 import {
   IconPhone,
   IconBrandAndroid,
   IconBrandInstagram,
 } from "@tabler/icons-react";
-import x from "@/app/global.module.css";
 
 export default function page() {
   return (
