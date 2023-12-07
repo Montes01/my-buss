@@ -1,5 +1,5 @@
 import NavIcon from "../Components/NavIcon";
-import x from "/app/global.module.css";
+import x from "@/app/global.module.css";
 import { PrincipalMessage, ProjectName } from "../lib/Constants";
 import {
   IconPhone,
