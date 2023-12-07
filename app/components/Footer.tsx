@@ -1,7 +1,7 @@
 // Footer.jsx
 import React from "react";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="flex flex-col py-12 w-full items-center justify-center gap-12 bg-maximum text-inherit">
       <p className="text-center px-2">
@@ -22,6 +22,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

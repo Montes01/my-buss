@@ -5,7 +5,12 @@ type InputComponentProps = {
   required: boolean;
 };
 
-export const Input = ({ label, name, type, required }: InputComponentProps) => {
+export default function BasicInput({
+  label,
+  name,
+  type,
+  required,
+}: InputComponentProps) {
   return (
     <div className="flex flex-col gap-1 w-full">
       <label htmlFor={name} className="block mb-2">
@@ -22,4 +27,4 @@ export const Input = ({ label, name, type, required }: InputComponentProps) => {
       />
     </div>
   );
-};
+}

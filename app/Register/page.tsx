@@ -1,36 +1,36 @@
 "use client";
 import Link from "next/link";
-import { Input } from "@/app/components/Input";
+import BasicInput from "@/app/Components/BasicInput";
 
 export default function Register() {
   return (
     <main className="w-full px-7 gap-12 backdrop-brightness-95 h-full py-20 flex flex-col items-center">
       <form className="max-w-md mx-auto flex flex-col w-full items-center gap-7">
-        <Input
+        <BasicInput
           required={true}
           type="text"
           name="name"
           label="Ingresa tu nombre"
         />
-        <Input
+        <BasicInput
           required={false}
           type="text"
           name="lastname"
           label="Ingresa tu apellido"
         />
-        <Input
+        <BasicInput
           required={true}
           type="email"
           name="email"
           label="Ingresa tu email"
         />
-        <Input
+        <BasicInput
           required
           type="password"
           name="password"
           label="Ingresa tu contraseña"
         />
-        <Input
+        <BasicInput
           required={true}
           type="password"
           name="password2"

@@ -2,15 +2,14 @@
 import { IconMoon, IconSun } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 export default function ThemeButton() {
-  const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleClick = () => {
     setIsDarkMode(!isDarkMode);
   };
+
   useEffect(() => {
-    if (document) {
+    if (typeof window !== "undefined") {
       const body = document.querySelector("body");
       if (isDarkMode) {
         localStorage.setItem("theme", "dark");
