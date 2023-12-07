@@ -1,6 +1,6 @@
-import NavIcon from "@/app/Components/NavIcon";
-import x from "@/app/global.module.css";
-import { PrincipalMessage, ProjectName } from "@/app/lib/Constants";
+import NavIcon from "../Components/NavIcon";
+import x from "/app/global.module.css";
+import { PrincipalMessage, ProjectName } from "../lib/Constants";
 import {
   IconPhone,
   IconBrandAndroid,

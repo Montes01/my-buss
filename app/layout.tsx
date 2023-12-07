@@ -1,5 +1,5 @@
-import Header from "@/app/Components/Header";
-import Footer from "@/app/Components/Footer";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";

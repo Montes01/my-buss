@@ -5,7 +5,7 @@ import {
   IconNotebook,
   IconInfoHexagon,
 } from "@tabler/icons-react";
-import x from "@/app/global.module.css";
+import x from "../global.module.css";
 export default function HeaderNav() {
   return (
     <ul

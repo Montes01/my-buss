@@ -1,5 +1,5 @@
 import Image from "next/image";
-import x from "@/app/global.module.css";
+import x from "../global.module.css";
 
 export default function Slider() {
   return (

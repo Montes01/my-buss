@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import BasicInput from "@/app/Components/BasicInput";
+import BasicInput from "../Components/BasicInput";
 
 export default function Register() {
   return (

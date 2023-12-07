@@ -1,6 +1,6 @@
 "use client";
 
-import { fetchLogin } from "@/app/lib/utils";
+import { fetchLogin } from "../../lib/utils";
 
 export default function login() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

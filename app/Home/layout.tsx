@@ -1,5 +1,5 @@
-import Services from "@/app/Components/Services";
-import Slider from "@/app/Components/Slider";
+import Services from "../Components/Services";
+import Slider from "../Components/Slider";
 
 interface Props {
   children: React.ReactNode;
