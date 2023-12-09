@@ -3,6 +3,7 @@ import Image from "next/image";
 import SideBar from "./SideBar";
 import HeaderNav from "./HeaderNav";
 import Link from "next/link";
+import React from "react";
 
 export default function Header() {
   return (

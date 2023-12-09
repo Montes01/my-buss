@@ -19,7 +19,7 @@ export default function HeaderNav() {
       <NavButton label="Registro" href="/Register">
         <IconNotebook />
       </NavButton>
-      <NavButton label="About" href="#">
+      <NavButton label="About" href="/About">
         <IconInfoHexagon />
       </NavButton>
     </ul>

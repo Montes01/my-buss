@@ -1,11 +1,5 @@
 import Link from "next/link";
-
-interface Props {
-  image: string;
-  title: string;
-  description: string;
-  href: string;
-}
+import { type ServiceCard as Props } from "../lib/declarations";
 
 export default function ServiceCard({
   image,
